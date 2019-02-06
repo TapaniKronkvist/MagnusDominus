@@ -1,26 +1,15 @@
 fileFormatVersion: 2
-guid: 1eed4f544a7070c4486b9a3308f56a8d
+guid: fb34c93102b4a97418c41ed6c9a6125f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube128
-    100004: pCube131
-    100006: pCube132
     400000: //RootNode
-    400002: pCube128
-    400004: pCube131
-    400006: pCube132
     2100000: lambert1
-    2300000: pCube128
-    2300002: pCube131
-    2300004: pCube132
-    3300000: pCube128
-    3300002: pCube131
-    3300004: pCube132
-    4300000: pCube128
-    4300002: pCube131
-    4300004: pCube132
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Castle1
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
