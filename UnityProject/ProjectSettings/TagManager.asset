@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - PlayerProjectile
+  - Player
+  - Debree
+  - ItemPickup
   - 
   - 
   - 

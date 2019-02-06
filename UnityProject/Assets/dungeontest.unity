@@ -1805,7 +1805,7 @@ GameObject:
   - component: {fileID: 364872641}
   - component: {fileID: 364872640}
   - component: {fileID: 364872639}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13941,7 +13941,7 @@ PrefabInstance:
     - target: {fileID: 3342983356250293206, guid: 3f60445dc88bdfa48af4b034d54377a4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 220.8
+      value: 182.69
       objectReference: {fileID: 0}
     - target: {fileID: 3342983356250293206, guid: 3f60445dc88bdfa48af4b034d54377a4,
         type: 3}
@@ -13951,7 +13951,7 @@ PrefabInstance:
     - target: {fileID: 3342983356250293206, guid: 3f60445dc88bdfa48af4b034d54377a4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -162.7
+      value: -134.15
       objectReference: {fileID: 0}
     - target: {fileID: 3342983356250293206, guid: 3f60445dc88bdfa48af4b034d54377a4,
         type: 3}
