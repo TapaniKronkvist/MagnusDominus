@@ -1,0 +1,2 @@
+# MagnusDominus
+Grupp01Prototype
