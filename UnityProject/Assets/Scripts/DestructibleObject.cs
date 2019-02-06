@@ -15,6 +15,7 @@ public class DestructibleObject : MonoBehaviour, IDamageable
         {
             destObj = Instantiate(destroyedSelf);
             destObj.SetActive(false);
+            destObj.transform.parent = transform;
         }
     }
 
@@ -23,6 +24,7 @@ public class DestructibleObject : MonoBehaviour, IDamageable
     {
         if (destObj != null)
         {
+            destObj.transform.parent = transform.parent;
             destObj.transform.position = transform.position;
             destObj.transform.localRotation = transform.localRotation;
             destObj.SetActive(true);

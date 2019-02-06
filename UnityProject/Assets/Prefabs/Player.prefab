@@ -262,10 +262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
-  baseMovementSpeed: 10
   canMove: 1
   canAim: 1
-  speedModifier: 1
   aimWaitTime: 1
   rb: {fileID: 0}
 --- !u!114 &7510893098020805757
@@ -777,34 +775,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5423949
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8401237
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 65.694
-      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
@@ -832,6 +802,34 @@ PrefabInstance:
     - target: {fileID: 400006, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.303311
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5423949
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8401237
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 65.694
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 92f8606468d80d847836d88e514fcc26, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -910,11 +908,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 2300002, guid: 8a4bebdc9debd694ebcee10c435f8795, type: 3}
+    - target: {fileID: 2300004, guid: 8a4bebdc9debd694ebcee10c435f8795, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 543ba5e7ffffab444847da842beedd25, type: 2}
-    - target: {fileID: 2300004, guid: 8a4bebdc9debd694ebcee10c435f8795, type: 3}
+    - target: {fileID: 2300002, guid: 8a4bebdc9debd694ebcee10c435f8795, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 543ba5e7ffffab444847da842beedd25, type: 2}
