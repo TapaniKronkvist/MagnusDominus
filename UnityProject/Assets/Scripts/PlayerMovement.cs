@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         {
             calcMoveSpeed();
             moveDirection = new Vector2(xAxis, yAxis).normalized;
-            rb.velocity = new Vector3(currentMoveSpeed * moveDirection.x, rb.velocity.y, currentMoveSpeed * moveDirection.y);
+            rb.velocity = Quaternion.Euler(0, 45, 0) * new Vector3(currentMoveSpeed * moveDirection.x, rb.velocity.y, currentMoveSpeed * moveDirection.y);
 
 
         }
@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         //  Debug.Log("k");
-        transform.eulerAngles = new Vector3(0, aimAngle, 0);
+        transform.eulerAngles = new Vector3(0, aimAngle+45, 0);
 
     }
 
