@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e8f6c3b764c6142831b93c863ee50e, type: 3}
-  m_Name: SpeedModifier
+  m_Script: {fileID: 11500000, guid: 5b76068a718ab9a4ba552c1e9012c210, type: 3}
+  m_Name: SpeedyGonzales
   m_EditorClassIdentifier: 
-  equipmentName: SmallShootChange
-  description: 
+  conflictingItems: []
+  equipmentName: GottaGoFast
+  description: Goes fast
   allowDuplicates: 1
-  modifier: 0.9
+  modifier: 2

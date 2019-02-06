@@ -7,7 +7,8 @@ public class PPBasic : PlayerProjectile
     [SerializeField]
     GameObject endPrefab;
     [SerializeField]
-    float projectileMoveSpeed = 10;
+    float baseProjectileMoveSpeed = 10;
+    float projectileMoveSpeed { get => Playermanager.ins.projectileSpeedModifier * baseProjectileMoveSpeed; }
     Vector3 playerSpeed;
     Vector3 lookDir;
     Rigidbody rb;

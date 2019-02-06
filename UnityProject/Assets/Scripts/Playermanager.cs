@@ -40,13 +40,16 @@ public class Playermanager : MonoBehaviour
     }
     [SerializeField]
     float basePostDamageInvulTime = 1f;
-    float postDamageInvulTime;
+    public float postDamageInvulTimeModifier = 1;
+
     [SerializeField]
     float baseTimeBetweenShots;
 
     public float BaseTimeBetweenShots { get => baseTimeBetweenShots; }
     public float TimeBetweenShots { get =>  BaseTimeBetweenShots * timeBetweenShotsModifier;  }
     public float timeBetweenShotsModifier = 1;
+    public float postDamageInvulTime { get { return basePostDamageInvulTime * postDamageInvulTimeModifier; } }
+
     #endregion
 
 
@@ -84,6 +87,9 @@ public class Playermanager : MonoBehaviour
     {
         timeBetweenShotsModifier = 1;
         movementSpeedModifier = 1;
+        postDamageInvulTimeModifier = 1;
+        projectileSpeedModifier = 1;
+        
 
         for (int i = 0; i < playerEquipment.Count; i++)
         {

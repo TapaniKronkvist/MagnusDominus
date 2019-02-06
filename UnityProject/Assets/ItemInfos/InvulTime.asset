@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e8f6c3b764c6142831b93c863ee50e, type: 3}
-  m_Name: Big speed
+  m_Script: {fileID: 11500000, guid: 7867baef0577d944599dc1b6ff6cb1dc, type: 3}
+  m_Name: InvulTime
   m_EditorClassIdentifier: 
-  equipmentName: BigSpeedChange
-  description: 
-  allowDuplicates: 1
-  modifier: 0.5
+  conflictingItems: []
+  equipmentName: Ghost
+  description: No die
+  allowDuplicates: 0
+  modifier: 1.2
