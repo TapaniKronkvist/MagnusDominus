@@ -28,7 +28,7 @@ public class CameraMovement : MonoBehaviour
                 case cameraModes.FollowPlayer:
                     if (playerObject != null)
                     {
-                        transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset), cameraMoveTime * Time.deltaTime);
+                        transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + Quaternion.Euler(0, 45, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset), cameraMoveTime * Time.deltaTime);
                     }
                     break;
                 case cameraModes.Fixed:
@@ -41,7 +41,12 @@ public class CameraMovement : MonoBehaviour
     }
 
     public void UpdatePos() {
-        transform.position = playerObject.transform.position + new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset);
+
+        if (playerObject != null)
+        {
+            transform.position = playerObject.transform.position + Quaternion.Euler(0, -45, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset);
+        }
+        else Debug.Log("PlayerObject not set");
     }
 
 
