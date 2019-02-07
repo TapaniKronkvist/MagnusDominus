@@ -751,6 +751,11 @@ PrefabInstance:
       propertyPath: playerFollowZOffset
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 5688550571473652973, guid: 8f4bca37be807144f9539554e837f77a,
+        type: 3}
+      propertyPath: playerFollowXOffset
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5688550571473652975, guid: 8f4bca37be807144f9539554e837f77a,
         type: 3}
       propertyPath: orthographic
