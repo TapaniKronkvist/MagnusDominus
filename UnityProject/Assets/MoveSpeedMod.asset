@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MoveSpeedMod
   m_EditorClassIdentifier: 
   conflictingItems: []
-  equipmentName: 
+  equipmentName: Faster
   description: 
   allowDuplicates: 1
-  modifier: 0
+  modifier: 1.1

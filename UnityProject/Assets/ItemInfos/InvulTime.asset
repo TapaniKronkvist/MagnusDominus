@@ -15,5 +15,5 @@ MonoBehaviour:
   conflictingItems: []
   equipmentName: Ghost
   description: No die
-  allowDuplicates: 0
+  allowDuplicates: 1
   modifier: 1.2
