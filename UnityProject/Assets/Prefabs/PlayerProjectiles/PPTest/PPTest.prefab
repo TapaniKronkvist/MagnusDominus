@@ -4794,7 +4794,7 @@ MonoBehaviour:
   lifeTime: 1
   endPrefab: {fileID: 7661784105894123053, guid: 39855af69684fae4a8b5eb2cdb0163cc,
     type: 3}
-  projectileMoveSpeed: 20
+  baseProjectileMoveSpeed: 20
   playerObj: {fileID: 0}
 --- !u!108 &6846009566833848393
 Light:

@@ -5,9 +5,13 @@ using UnityEngine;
 public class EquipmentPickup : Item
 {
     [SerializeField]
-    Equipment equipment;
+    public Equipment equipment;
 
-
+    public override void CreateWorldViz()
+    {
+        pickup = equipment;
+        base.CreateWorldViz();
+    }
 
     public override void PickUp()
     {

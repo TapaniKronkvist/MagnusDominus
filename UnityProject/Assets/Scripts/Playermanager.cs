@@ -8,12 +8,17 @@ public class Playermanager : MonoBehaviour
     #region PlayerStats
     [SerializeField]
     PlayerProjectile currentProjectile;
+    [SerializeField]
+    float baseDamage = 1;
     public float currentDamage = 1;
     [SerializeField]
     float baseMovementSpeed;
     public float BaseMovementSpeed { get => baseMovementSpeed; }
     public float movementSpeedModifier = 1;
     public float projectileSpeedModifier = 1;
+    public float timeBetweenShotsModifier = 1;
+    public float postDamageInvulTimeModifier = 1;
+    public float damageModifier = 1;
     [SerializeField]
     public List<Equipment> playerEquipment = new List<Equipment>();
     public enum Element { fire, stone, nature, neutral}
@@ -40,14 +45,14 @@ public class Playermanager : MonoBehaviour
     }
     [SerializeField]
     float basePostDamageInvulTime = 1f;
-    public float postDamageInvulTimeModifier = 1;
+
 
     [SerializeField]
     float baseTimeBetweenShots;
 
     public float BaseTimeBetweenShots { get => baseTimeBetweenShots; }
     public float TimeBetweenShots { get =>  BaseTimeBetweenShots * timeBetweenShotsModifier;  }
-    public float timeBetweenShotsModifier = 1;
+
     public float postDamageInvulTime { get { return basePostDamageInvulTime * postDamageInvulTimeModifier; } }
 
     #endregion
@@ -89,14 +94,15 @@ public class Playermanager : MonoBehaviour
         movementSpeedModifier = 1;
         postDamageInvulTimeModifier = 1;
         projectileSpeedModifier = 1;
-        
+        currentDamage = baseDamage;
+        damageModifier = 1;
 
         for (int i = 0; i < playerEquipment.Count; i++)
         {
             playerEquipment[i].ChangePlayerStats();
         }
 
-        Debug.Log(string.Format("MaxHP: {0} CurHP: {1} TimeBetShots:{2} MoveSpeed{3}", maxHP, currentHP, TimeBetweenShots, movementSpeedModifier * baseMovementSpeed));
+       // Debug.Log(string.Format("MaxHP: {0} CurHP: {1} TimeBetShots:{2} MoveSpeed{3}", maxHP, currentHP, TimeBetweenShots, movementSpeedModifier * baseMovementSpeed));
     }
 
     public void PickUpEquipment(Equipment equipment)
