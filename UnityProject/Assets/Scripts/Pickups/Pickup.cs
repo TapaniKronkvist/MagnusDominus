@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : ScriptableObject , IPickup
 {
-    [SerializeField]
+
     public GameObject worldObject;
     public string itemName;
     public string description;

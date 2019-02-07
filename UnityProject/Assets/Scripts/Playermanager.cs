@@ -21,14 +21,15 @@ public class Playermanager : MonoBehaviour
     public float damageModifier = 1;
     [SerializeField]
     public List<Equipment> playerEquipment = new List<Equipment>();
-    public enum Element { fire, stone, nature, neutral}
+    public enum Element { fire, stone, nature, neutral }
     public Element selectedElemen = Element.neutral;
     List<Element> unlockedElements = new List<Element>();
 
     [SerializeField]
-    int maxHP = 1;
+     int maxHP = 1;
+    [SerializeField]
     int currentHP;
-    public int CurrentHP { get => currentHP; }
+    public int CurrentHP { get => currentHP; set { currentHP = value; } }
 
     public int MaxHP
     {
@@ -51,7 +52,7 @@ public class Playermanager : MonoBehaviour
     float baseTimeBetweenShots;
 
     public float BaseTimeBetweenShots { get => baseTimeBetweenShots; }
-    public float TimeBetweenShots { get =>  BaseTimeBetweenShots * timeBetweenShotsModifier;  }
+    public float TimeBetweenShots { get => BaseTimeBetweenShots * timeBetweenShotsModifier; }
 
     public float postDamageInvulTime { get { return basePostDamageInvulTime * postDamageInvulTimeModifier; } }
 
@@ -102,7 +103,7 @@ public class Playermanager : MonoBehaviour
             playerEquipment[i].ChangePlayerStats();
         }
 
-       // Debug.Log(string.Format("MaxHP: {0} CurHP: {1} TimeBetShots:{2} MoveSpeed{3}", maxHP, currentHP, TimeBetweenShots, movementSpeedModifier * baseMovementSpeed));
+        // Debug.Log(string.Format("MaxHP: {0} CurHP: {1} TimeBetShots:{2} MoveSpeed{3}", maxHP, currentHP, TimeBetweenShots, movementSpeedModifier * baseMovementSpeed));
     }
 
     public void PickUpEquipment(Equipment equipment)
@@ -158,8 +159,10 @@ public class Playermanager : MonoBehaviour
     }
 
     public void Heal(int healAmount)
-    {
-        if (currentHP + healAmount <= maxHP) currentHP += healAmount; else currentHP = maxHP;
+    {if (healAmount > 0)
+        {
+            if (currentHP + healAmount <= maxHP) currentHP += healAmount; else if (currentHP < maxHP) currentHP = maxHP;
+        }
     }
     #endregion Healtstuff
 }

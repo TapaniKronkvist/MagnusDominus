@@ -37,7 +37,7 @@ public class EquipmentPickup : Item
                 if (Playermanager.ins.playerEquipment.Contains(equipment.conflictingItems[i]))
                 {
                     return true;
-                    break;
+                   //break;
                 }
             }
         }
