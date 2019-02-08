@@ -51,7 +51,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (UnityEditor.Selection.Contains(gameObject))
         {
-            Gizmos.DrawSphere(transform.position, -spawnRadius);
+            Gizmos.DrawWireSphere(transform.position, spawnRadius);
         }
     }
 

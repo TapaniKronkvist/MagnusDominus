@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     GameObject playerObject;
     [SerializeField]
-    float playerFollowXOffset = 0, playerFollowZOffset = 0, playerFollowYOffset = 0, cameraMoveTime = 0;
+    float playerFollowXOffset = 0, playerFollowZOffset = 0, playerFollowYOffset = 0, cameraMoveTime = 0, aimMove = 5;
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class CameraMovement : MonoBehaviour
                          //   Debug.Log("Correcting y rotation");
                         }
 
-                        transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + Quaternion.Euler(0, 45, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset), cameraMoveTime * Time.deltaTime);
+                        transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + Quaternion.Euler(0, 45, 0) * new Vector3(playerFollowXOffset + aimMove * Playermanager.ins.aimXAxis, playerFollowYOffset, playerFollowZOffset + Playermanager.ins.aimYAxis * aimMove) , cameraMoveTime * Time.deltaTime);
                     }
                     break;
                 case cameraModes.Fixed:

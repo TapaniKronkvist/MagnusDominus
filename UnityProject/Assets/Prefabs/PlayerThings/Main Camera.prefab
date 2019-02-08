@@ -59,7 +59,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.68
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -101,3 +101,4 @@ MonoBehaviour:
   playerFollowZOffset: -14
   playerFollowYOffset: 15
   cameraMoveTime: 7.54
+  aimMove: 4

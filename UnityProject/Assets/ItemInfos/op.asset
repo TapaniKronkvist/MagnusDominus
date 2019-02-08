@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e8f6c3b764c6142831b93c863ee50e, type: 3}
   m_Name: op
   m_EditorClassIdentifier: 
-  worldObject: {fileID: 0}
-  itemName: sa
+  worldObject: {fileID: 4407084771424268082, guid: f4c6e1937e671a346a34fd3c4faa715d,
+    type: 3}
+  itemName: Fast shut
   description: 
   conflictingItems: []
-  allowDuplicates: 1
-  modifier: 0
+  allowDuplicates: 0
+  modifier: 0.9
