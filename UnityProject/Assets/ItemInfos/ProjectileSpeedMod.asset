@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612953c8bc5a4e8409885d4d95815f5d, type: 3}
+  m_Name: ProjectileSpeedMod
+  m_EditorClassIdentifier: 
+  worldObject: {fileID: 954233849435320357, guid: 0ebca561dab0a6346b228c171d7067bb,
+    type: 3}
+  itemName: Sharpened tips
+  description: Increases projectile speed by 10%
+  conflictingItems: []
+  allowDuplicates: 0
+  modifier: 1.1

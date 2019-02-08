@@ -19,7 +19,7 @@ public class DebugPlayerStatsShower : MonoBehaviour
         {
             for (int i = 0; i < Playermanager.ins.playerEquipment.Count; i++)
             {
-                allitems +=   Playermanager.ins.playerEquipment[i].equipmentName;
+                allitems +=   Playermanager.ins.playerEquipment[i].itemName;
                 allitems += ", ";
             }
         }

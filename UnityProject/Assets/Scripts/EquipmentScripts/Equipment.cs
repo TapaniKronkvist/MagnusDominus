@@ -4,14 +4,17 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Empty Equipment", menuName = "Equipment/BaseEq", order = 1)]
-public class Equipment : ScriptableObject
+public class Equipment : Pickup
 {
+
     public List<Equipment> conflictingItems;
-    public string equipmentName;
-    public string description;
+
     public bool allowDuplicates = true;
+
+
+
     public virtual void ChangePlayerStats()
     {
-        Debug.Log(equipmentName + " is Changing stats");
+        Debug.Log(itemName + " is Changing stats");
     }
 }

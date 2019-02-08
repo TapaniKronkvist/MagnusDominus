@@ -5,9 +5,13 @@ using UnityEngine;
 public class EquipmentPickup : Item
 {
     [SerializeField]
-    Equipment equipment;
+    public Equipment equipment;
 
-
+    public override void CreateWorldViz()
+    {
+        pickup = equipment;
+        base.CreateWorldViz();
+    }
 
     public override void PickUp()
     {
@@ -33,7 +37,7 @@ public class EquipmentPickup : Item
                 if (Playermanager.ins.playerEquipment.Contains(equipment.conflictingItems[i]))
                 {
                     return true;
-                    break;
+                   //break;
                 }
             }
         }
