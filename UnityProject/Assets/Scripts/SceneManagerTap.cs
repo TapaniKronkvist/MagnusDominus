@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 //Managing scene transitions.
 //Written by Tapani Kronkvist
-public class SceneManager : MonoBehaviour
+public class SceneManagerTap : MonoBehaviour
 {
     public void StartNewGame()
     {

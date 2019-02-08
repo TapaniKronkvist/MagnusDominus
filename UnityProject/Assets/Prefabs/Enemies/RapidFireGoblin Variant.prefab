@@ -93,6 +93,11 @@ PrefabInstance:
       propertyPath: cooldownMax
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578,
+        type: 3}
+      propertyPath: projectileDamage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2075097348975405810, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_Layer

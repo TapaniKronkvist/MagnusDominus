@@ -15,6 +15,8 @@ public class Goblin : Enemy
     protected float cooldown;
     protected Vector3 toPlayer;
 
+    [SerializeField]
+   protected int projectileDamage;
     protected virtual void Update()
     {
 
@@ -45,6 +47,7 @@ public class Goblin : Enemy
         {
             GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
             arrow.GetComponent<Arrow>().shooter = transform;
+            arrow.GetComponent<Arrow>().damage = projectileDamage;
             cooldown = 0;
         }
             
