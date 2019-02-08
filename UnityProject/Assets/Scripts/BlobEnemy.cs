@@ -6,13 +6,17 @@ public class BlobEnemy : Enemy
 {
     [SerializeField]
     float moveSpeed;
+    [SerializeField]
+    float range;
+    Vector3 toPlayer;
     private void Update()
     {
 
-        if (Playermanager.ins.playerObject != null)
+        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
         {
             transform.LookAt(Playermanager.ins.playerObject.transform.position);
-            transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+            toPlayer = Playermanager.ins.playerObject.transform.position - transform.position;
+            transform.Translate(toPlayer * moveSpeed * Time.deltaTime);
         }
     }
 
@@ -27,4 +31,9 @@ public class BlobEnemy : Enemy
         }
     }
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, range);
+    }
 }
