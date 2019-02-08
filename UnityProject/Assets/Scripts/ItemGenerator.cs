@@ -22,9 +22,22 @@ public class ItemGenerator : MonoBehaviour
 #endif
 
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKey(KeyCode.O))
+        {
+            RedoItems();
+            SpawnItems(testItems);
+        }
+#endif
+    }
+
+
     private void Start()
     {
         if (ins == null) ins = this; else Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     public void SpawnItems(List<Pickup> items)
@@ -48,16 +61,19 @@ public class ItemGenerator : MonoBehaviour
 #if UNITY_EDITOR
     public void RedoItems()
     {
-        for (int i = 0; i < itemSpawners.Length; i++)
+        if (itemSpawners != null)
         {
-            itemSpawners[i].gameObject.SetActive(true);
+            for (int i = 0; i < itemSpawners.Length; i++)
+            {
+                itemSpawners[i].gameObject.SetActive(true);
 
-        }
+            }
 
-        Item[] itemsInWorld = FindObjectsOfType<Item>();
-        for (int i = 0; i < itemsInWorld.Length; i++)
-        {
-            DestroyImmediate(itemsInWorld[i].gameObject);
+            Item[] itemsInWorld = FindObjectsOfType<Item>();
+            for (int i = 0; i < itemsInWorld.Length; i++)
+            {
+                DestroyImmediate(itemsInWorld[i].gameObject);
+            }
         }
     }
 

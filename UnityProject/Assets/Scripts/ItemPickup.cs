@@ -15,6 +15,13 @@ public class ItemPickup : Item
 
     public override void PickUp()
     {
-        item.PickedUp();
+        if (item.CanBePickedUp())
+        {
+            item.PickedUp();
+            Destroy(gameObject);
+        }
+
+
+
     }
 }

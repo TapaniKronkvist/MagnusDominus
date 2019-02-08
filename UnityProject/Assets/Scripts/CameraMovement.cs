@@ -28,6 +28,12 @@ public class CameraMovement : MonoBehaviour
                 case cameraModes.FollowPlayer:
                     if (playerObject != null)
                     {
+                        if (transform.localRotation.y != 45)
+                        {
+                            transform.rotation = Quaternion.Euler( new Vector3(transform.eulerAngles.x, 45, transform.eulerAngles.z));
+                            Debug.Log("Correcting y rotation");
+                        }
+
                         transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + Quaternion.Euler(0, 45, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset), cameraMoveTime * Time.deltaTime);
                     }
                     break;

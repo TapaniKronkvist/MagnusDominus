@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612953c8bc5a4e8409885d4d95815f5d, type: 3}
   m_Name: ProjectileSpeedMod
   m_EditorClassIdentifier: 
-  worldObject: {fileID: 0}
-  itemName: 
-  description: 
+  worldObject: {fileID: 954233849435320357, guid: 0ebca561dab0a6346b228c171d7067bb,
+    type: 3}
+  itemName: Sharpened tips
+  description: Increases projectile speed by 10%
   conflictingItems: []
-  allowDuplicates: 1
-  modifier: 0
+  allowDuplicates: 0
+  modifier: 1.1
