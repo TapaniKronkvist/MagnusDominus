@@ -207,6 +207,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 5424248405917016573, guid: 10d23b9ace930a845b8df75bf31eee1f,
     type: 3}
   cooldownMax: 2
+  projectileDamage: 1
 --- !u!54 &7570450817716167377
 Rigidbody:
   m_ObjectHideFlags: 0

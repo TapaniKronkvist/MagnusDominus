@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f521743ddc3811446bbcb9f32d4a4b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minNumberOfEnemies: 2
+  minNumberOfEnemies: 1
   maxNumberOfEnemies: 10
   spawnRadius: 5
   testEnemies: []

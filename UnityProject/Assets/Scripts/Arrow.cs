@@ -9,8 +9,8 @@ public class Arrow : MonoBehaviour
     float endTimer;
     [SerializeField]
     float speed;
-    [SerializeField]
-    int damage;
+    [HideInInspector]
+    public int damage = 1;
     [SerializeField]
     float knockback;
     public Vector3 lookDir;
@@ -43,10 +43,14 @@ public class Arrow : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Damage();
+            
         }
+        Destroy(gameObject);
     }
     void Damage()
     {
         Playermanager.ins.DamagePlayer(damage);
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(15, transform.position);
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(.4f);
     }
 }

@@ -28,12 +28,13 @@ public class EnemySpawner : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.P))
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Spawning");
             SpawnEnemies(testEnemies);
         }
-
+#endif
     }
     public void SpawnEnemies(Enemy[] enemiesToSpawnFrom)
     {
