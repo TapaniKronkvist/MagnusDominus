@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1326679940}
   - component: {fileID: 1326679939}
   m_Layer: 0
-  m_Name: castle_prototype
+  m_Name: castle_prop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,7 +395,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326679938}
-  m_Mesh: {fileID: 4300000, guid: 5d6d1e501a9098b49b28c51ad5b6b07d, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 0f1755a8dab42e747be32094a22e13c9, type: 3}
 --- !u!23 &1326679939
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d6d1e501a9098b49b28c51ad5b6b07d, type: 3}
+  - {fileID: 2100000, guid: 1f343f2d5f74abf4b8530f421a1bd893, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
