@@ -7,7 +7,8 @@ public class PPBasic : PlayerProjectile
     [SerializeField]
     GameObject endPrefab;
     [SerializeField]
-    float projectileMoveSpeed = 10;
+    float baseProjectileMoveSpeed = 10;
+    float projectileMoveSpeed { get => Playermanager.ins.projectileSpeedModifier * baseProjectileMoveSpeed; }
     Vector3 playerSpeed;
     Vector3 lookDir;
     Rigidbody rb;
@@ -34,6 +35,7 @@ public class PPBasic : PlayerProjectile
             collision.gameObject.GetComponent<IDamageable>().Damage(Damage, Playermanager.ins.gameObject);
             
         }
+
 
         GameObject newobj = Instantiate(endPrefab);
         newobj.transform.position = transform.position;

@@ -12,7 +12,7 @@ public class FirerateMod : Equipment
 
     public override void ChangePlayerStats()
     {
-        //  Playermanager.ins.TimeBetweenShots = Playermanager.ins.BaseTimeBetweenShots * modifier;
+
         Playermanager.ins.timeBetweenShotsModifier *= modifier;
     }
 

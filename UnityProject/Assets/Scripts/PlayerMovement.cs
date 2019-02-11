@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Vector2 moveDirection;
     public Vector2 PlayerMoveDirection { get => moveDirection; }
-
+    public float cameraRotation = 45;
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         {
             calcMoveSpeed();
             moveDirection = new Vector2(xAxis, yAxis).normalized;
-            rb.velocity = Quaternion.Euler(0, 45, 0) * new Vector3(currentMoveSpeed * moveDirection.x, rb.velocity.y, currentMoveSpeed * moveDirection.y);
+            rb.velocity = Quaternion.Euler(0, cameraRotation, 0) * new Vector3(currentMoveSpeed * moveDirection.x, rb.velocity.y, currentMoveSpeed * moveDirection.y);
 
 
         }
@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         //  Debug.Log("k");
-        transform.eulerAngles = new Vector3(0, aimAngle+45, 0);
+        transform.eulerAngles = new Vector3(0, aimAngle+cameraRotation, 0);
 
     }
 

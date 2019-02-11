@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e8f6c3b764c6142831b93c863ee50e, type: 3}
+  m_Name: op
+  m_EditorClassIdentifier: 
+  worldObject: {fileID: 4407084771424268082, guid: f4c6e1937e671a346a34fd3c4faa715d,
+    type: 3}
+  itemName: Fast shut
+  description: 
+  conflictingItems: []
+  allowDuplicates: 0
+  modifier: 0.9

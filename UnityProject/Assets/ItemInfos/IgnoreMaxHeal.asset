@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f4c4b442a68f04b81f42cdb928021e, type: 3}
+  m_Name: IgnoreMaxHeal
+  m_EditorClassIdentifier: 
+  worldObject: {fileID: 3035472641362172494, guid: 8e4137c7aab64a64f81207aedca3d199,
+    type: 3}
+  itemName: Green hp
+  description: Gives 1 hp
+  healAmount: 1
+  ignoreMaxHP: 1
