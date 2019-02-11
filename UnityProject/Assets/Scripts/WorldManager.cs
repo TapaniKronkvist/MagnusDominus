@@ -9,7 +9,7 @@ public class WorldManager : MonoBehaviour
     // Start is called before the first frame update
     public enum Bosses { fire, nature, stone }
     List<Bosses> defeatedBosses = new List<Bosses>();
-
+    Bosses stateToLoad;
     public List<Bosses> DefeatedBosses { get => defeatedBosses; }
 
     [SerializeField]
@@ -37,13 +37,50 @@ public class WorldManager : MonoBehaviour
 
         SceneManager.LoadScene(overworldSceneNum);
     }
-    public void LoadDungeon()
+    public void LoadDungeon(Bosses state)
     {
         SceneManager.LoadScene(dungeonSceneNum);
+        stateToLoad = state;
     }
     public void DungeonLoaded()
     {
+        SetupDungeonEnemies();
+        SetupDungeonItems();
+    }
 
+    void SetupDungeonItems()
+    {
+        switch (stateToLoad)
+        {
+            case Bosses.fire:
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[0].ItemDropTable);
+                break;
+            case Bosses.nature:
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[1].ItemDropTable);
+                break;
+            case Bosses.stone:
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[2].ItemDropTable);
+                break;
+            default:
+                break;
+        }
+    }
+    void SetupDungeonEnemies()
+    {
+        switch (stateToLoad)
+        {
+            case Bosses.fire:
+                EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[0].EnemyGroups);
+                break;
+            case Bosses.nature:
+                EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[1].EnemyGroups);
+                break;
+            case Bosses.stone:
+                EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[2].EnemyGroups);
+                break;
+            default:
+                break;
+        }
     }
 
     public void OverworldLoaded()
