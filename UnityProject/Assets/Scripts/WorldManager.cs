@@ -37,7 +37,10 @@ public class WorldManager : MonoBehaviour
 
         SceneManager.LoadScene(overworldSceneNum);
     }
-
+    public void LoadDungeon()
+    {
+        SceneManager.LoadScene(dungeonSceneNum);
+    }
     public void DungeonLoaded()
     {
 
