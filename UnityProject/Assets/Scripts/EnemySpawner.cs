@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
     public void SpawnEnemies(List<Enemy> enemiesToSpawn)
     {
         //int numberOfEnemiesToSpawn = Random.Range(minNumberOfEnemies, maxNumberOfEnemies);
-        Debug.Log("spawning " + enemiesToSpawn.Count + " enemies");
+     //   Debug.Log("spawning " + enemiesToSpawn.Count + " enemies");
         for (int i = 0; i < enemiesToSpawn.Count; i++)
         {
             GameObject newEnemy = Instantiate(enemiesToSpawn[i].gameObject);
