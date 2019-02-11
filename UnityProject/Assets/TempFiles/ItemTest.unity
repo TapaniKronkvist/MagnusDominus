@@ -296,7 +296,6 @@ GameObject:
   - component: {fileID: 40399841}
   - component: {fileID: 40399840}
   - component: {fileID: 40399839}
-  - component: {fileID: 40399838}
   - component: {fileID: 40399842}
   m_Layer: 0
   m_Name: WorldManager
@@ -305,19 +304,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &40399838
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40399837}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &40399839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -325,7 +311,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40399837}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -404,7 +390,10 @@ MonoBehaviour:
     itemDropTable: []
     enemyGroups: []
   - name: fire
-    itemDropTable: []
+    itemDropTable:
+    - {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6, type: 2}
+    - {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6, type: 2}
+    - {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6, type: 2}
     enemyGroups:
     - name: 
       enemies:
@@ -418,7 +407,7 @@ MonoBehaviour:
   - name: stone
     itemDropTable: []
     enemyGroups: []
-  overworldSceneNum: 3
+  overworldSceneNum: 4
   dungeonSceneNum: 0
 --- !u!4 &51127309 stripped
 Transform:

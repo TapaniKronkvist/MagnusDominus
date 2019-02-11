@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class EnterCastle : MonoBehaviour
 {
+
+    [SerializeField]
+    WorldManager.Bosses castleToLoad;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            Application.LoadLevel("Castle");
+            WorldManager.ins.LoadDungeon(castleToLoad);
         }
     }
 }
