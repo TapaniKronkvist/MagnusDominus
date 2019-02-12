@@ -21,19 +21,20 @@ public class TurretFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Vector3 tarPos = 
 
         if (smooth)
         {
-            transform.position =    Vector3.Lerp(transform.position,( objToFollow.transform.forward * objToFollow.transform.position.magnitude) + offset, moveSpeed * Time.deltaTime);
+            transform.position =    Vector3.Lerp(transform.position,objToFollow.transform.localPosition + offset, moveSpeed * Time.deltaTime);
         }
         else
         {
-            transform.position = objToFollow.transform.position + offset;
+            transform.position = objToFollow.transform.localPosition + offset;
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(objToFollow.transform.position + offset, .5f);
+        Gizmos.DrawWireSphere(objToFollow.transform.localPosition + offset, .5f);
     }
 }

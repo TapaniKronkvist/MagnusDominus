@@ -4339,7 +4339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objToFollow: {fileID: 2102628812}
-  offset: {x: 4, y: 0, z: 0}
+  offset: {x: 3.41, y: 0, z: 0}
   smooth: 1
   moveSpeed: 10
 --- !u!4 &427564255 stripped
@@ -19057,7 +19057,7 @@ PrefabInstance:
     - target: {fileID: 6866414283491885472, guid: 65e75e6830b413a47b678d6bce2d91f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.440002
+      value: -67.18
       objectReference: {fileID: 0}
     - target: {fileID: 6866414283491885472, guid: 65e75e6830b413a47b678d6bce2d91f2,
         type: 3}
@@ -19067,7 +19067,7 @@ PrefabInstance:
     - target: {fileID: 6866414283491885472, guid: 65e75e6830b413a47b678d6bce2d91f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.47
+      value: -35.16
       objectReference: {fileID: 0}
     - target: {fileID: 6866414283491885472, guid: 65e75e6830b413a47b678d6bce2d91f2,
         type: 3}
