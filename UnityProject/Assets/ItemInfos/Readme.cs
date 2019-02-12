@@ -1,0 +1,1 @@
+﻿//Alla items som ligger i resources kan läggas in i spelarens collection 
