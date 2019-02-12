@@ -13,6 +13,8 @@ public class Arrow : MonoBehaviour
     int damage;
     [SerializeField]
     float knockback;
+    [SerializeField]
+    float stunTime;
     public Vector3 lookDir;
     public Transform shooter { set { lookDir = value.forward; } }
 
@@ -49,5 +51,7 @@ public class Arrow : MonoBehaviour
     void Damage()
     {
         Playermanager.ins.DamagePlayer(damage);
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(knockback, transform.position);
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(stunTime);
     }
 }

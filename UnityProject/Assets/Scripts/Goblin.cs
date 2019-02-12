@@ -14,6 +14,8 @@ public class Goblin : Enemy
     protected float cooldownMax;
     protected float cooldown;
     protected Vector3 toPlayer;
+    [SerializeField]
+    protected Transform movement;
 
     protected virtual void Update()
     {
@@ -23,14 +25,14 @@ public class Goblin : Enemy
             if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) > range / 2)
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
-                transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+                movement.transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
                 Shoot();
 
             }
             else if(Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) <= range / 2)
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
-                transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1);
+                movement.transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1);
                 Shoot();
             }
         }
