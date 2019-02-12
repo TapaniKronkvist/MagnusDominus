@@ -33,6 +33,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578,
+        type: 3}
+      propertyPath: cooldownMax
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578,
+        type: 3}
+      propertyPath: projectileDamage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,22 +61,22 @@ PrefabInstance:
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5228311
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8524363
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8032754563448082769, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
@@ -87,16 +97,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578,
-        type: 3}
-      propertyPath: cooldownMax
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578,
-        type: 3}
-      propertyPath: projectileDamage
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2075097348975405810, guid: 0c6431f9d9ab05045b89be1d46301578,
         type: 3}
