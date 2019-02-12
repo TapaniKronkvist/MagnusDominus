@@ -28,7 +28,7 @@ public class TurretFollow : MonoBehaviour
         }
         else
         {
-            transform.position = objToFollow.transform.forward * objToFollow.transform.position.magnitude + offset;
+            transform.position = objToFollow.transform.position + offset;
         }
     }
 
