@@ -21,7 +21,7 @@ public class WorldManager : MonoBehaviour
     [SerializeField]
     int overworldSceneNum, dungeonSceneNum;
 
-    void Start()
+    void Awake()
     {
         if (WorldManager.ins == null)
         {
@@ -53,13 +53,13 @@ public class WorldManager : MonoBehaviour
         switch (stateToLoad)
         {
             case Bosses.fire:
-                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[0].ItemDropTable);
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[0].itemDropTable);
                 break;
             case Bosses.nature:
-                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[1].ItemDropTable);
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[1].itemDropTable);
                 break;
             case Bosses.stone:
-                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[2].ItemDropTable);
+                ItemGenerator.ins.SpawnItems(WorldManager.ins.dungeonStates[2].itemDropTable);
                 break;
             default:
                 break;
@@ -70,12 +70,15 @@ public class WorldManager : MonoBehaviour
         switch (stateToLoad)
         {
             case Bosses.fire:
+                Debug.Log("Spawning fire enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[0].EnemyGroups);
                 break;
             case Bosses.nature:
+                Debug.Log("Spawning nature enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[1].EnemyGroups);
                 break;
             case Bosses.stone:
+                Debug.Log("Spawning stone enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[2].EnemyGroups);
                 break;
             default:
@@ -109,30 +112,37 @@ public class WorldManager : MonoBehaviour
 
     void SetupOverWorldItems()
     {
+        Debug.Log("Items");
         if (defeatedBosses.Count > 0)
         {
+            
             switch (defeatedBosses[defeatedBosses.Count - 1])
             {
                 case Bosses.fire:
-                    ItemGenerator.ins.SpawnItems(overWorldStates[1].ItemDropTable);
+                    Debug.Log("Spawning fire items");
+                    ItemGenerator.ins.SpawnItems(overWorldStates[1].itemDropTable);
+
                     break;
                 case Bosses.nature:
-                    ItemGenerator.ins.SpawnItems(overWorldStates[2].ItemDropTable);
+                    Debug.Log("Spawning nature items");
+                    ItemGenerator.ins.SpawnItems(overWorldStates[2].itemDropTable);
                     break;
                 case Bosses.stone:
-                    ItemGenerator.ins.SpawnItems(overWorldStates[3].ItemDropTable);
+                    Debug.Log("Spawning stone items");
+                    ItemGenerator.ins.SpawnItems(overWorldStates[3].itemDropTable);
                     break;
 
             }
         }
         else
         {
-            ItemGenerator.ins.SpawnItems(overWorldStates[0].ItemDropTable);
+            ItemGenerator.ins.SpawnItems(overWorldStates[0].itemDropTable);
         }
     }
 
     void SetupOverWorldEnemies()
     {
+        Debug.Log("Spawning");
         EnemyGenerator eg = EnemyGenerator.ins;
         if (eg == null) return;
         if (defeatedBosses.Count > 0)
@@ -140,18 +150,22 @@ public class WorldManager : MonoBehaviour
             switch (defeatedBosses[defeatedBosses.Count - 1])
             {
                 case Bosses.fire:
+                    Debug.Log("Spawning fire enemies");
                     eg.SpawnEnemies(overWorldStates[1].EnemyGroups);
                     break;
                 case Bosses.nature:
+                    Debug.Log("Spawning nature enemies");
                     eg.SpawnEnemies(overWorldStates[2].EnemyGroups);
                     break;
                 case Bosses.stone:
+                    Debug.Log("Spawning stone enemies");
                     eg.SpawnEnemies(overWorldStates[3].EnemyGroups);
                     break;
             }
         }
         else
         {
+            Debug.Log("Spawning neutral");
             eg.SpawnEnemies(overWorldStates[0].EnemyGroups);
         }
     }
@@ -171,8 +185,8 @@ public class WorldState
     [HideInInspector]
     public string name;
     [SerializeField]
-    List<Pickup> itemDropTable = new List<Pickup>();
-    public List<Pickup> ItemDropTable { get => itemDropTable; }
+    public List<Pickup> itemDropTable = new List<Pickup>();
+  //  public List<Pickup> ItemDropTable { get => itemDropTable; }
 
     [SerializeField]
     List<GroupOfEnemies> enemyGroups = new List<GroupOfEnemies>();
