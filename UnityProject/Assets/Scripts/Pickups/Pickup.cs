@@ -7,6 +7,7 @@ public class Pickup : ScriptableObject , IPickup
 
     public GameObject worldObject;
     public string itemName;
+    [TextArea(3,10)]
     public string description;
 
     public GameObject WorldObject

@@ -31,9 +31,10 @@ public class Midboss : Enemy
 
     private void Update()
     {
-            
+
         if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
         {
+            firePoint.position = new Vector3(firePoint.position.x, Playermanager.ins.playerObject.transform.position.y, firePoint.position.z);
             transform.LookAt(Playermanager.ins.playerObject.transform.position);
             Shoot();
         

@@ -11,7 +11,8 @@ public class WorldManager : MonoBehaviour
     List<Bosses> defeatedBosses = new List<Bosses>();
     Bosses stateToLoad;
     public List<Bosses> DefeatedBosses { get => defeatedBosses; }
-
+    [SerializeField]
+    GameObject fireBoss, natureBoss, stoneBoss, magnusBoss;
     [SerializeField]
     WorldState[] dungeonStates = new WorldState[3] { new WorldState("Fire Dungeon"), new WorldState("Nature Dungeon"), new WorldState("Stone Dungeon") };
 
@@ -72,14 +73,26 @@ public class WorldManager : MonoBehaviour
             case Bosses.fire:
                 Debug.Log("Spawning fire enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[0].EnemyGroups);
+                if (FindObjectOfType<BossSpawner>())
+                {
+                    FindObjectOfType<BossSpawner>().SpawnBoss(fireBoss);
+                }
                 break;
             case Bosses.nature:
                 Debug.Log("Spawning nature enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[1].EnemyGroups);
+                if (FindObjectOfType<BossSpawner>())
+                {
+                    FindObjectOfType<BossSpawner>().SpawnBoss(natureBoss);
+                }
                 break;
             case Bosses.stone:
                 Debug.Log("Spawning stone enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[2].EnemyGroups);
+                if (FindObjectOfType<BossSpawner>())
+                {
+                    FindObjectOfType<BossSpawner>().SpawnBoss(stoneBoss);
+                }
                 break;
             default:
                 break;

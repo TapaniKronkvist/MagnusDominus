@@ -9593,7 +9593,7 @@ MonoBehaviour:
   beamMoveSpeed: 15
   mask:
     serializedVersion: 2
-    m_Bits: 10039
+    m_Bits: 1847
   projectiles: 50
   beam: {fileID: 5437748966721163491}
 --- !u!114 &5437748966435270469

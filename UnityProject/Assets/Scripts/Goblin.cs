@@ -18,6 +18,9 @@ public class Goblin : Enemy
     protected Transform movement;
 
     [SerializeField]
+    protected Vector3 bulletOffset;
+
+    [SerializeField]
    protected int projectileDamage;
     protected virtual void Update()
     {
@@ -47,7 +50,7 @@ public class Goblin : Enemy
     {
         if (cooldown >= cooldownMax)
         {
-            GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
+            GameObject arrow = Instantiate(arrowPrefab, transform.position + bulletOffset, transform.rotation) ;
             arrow.GetComponent<Arrow>().shooter = transform;
             arrow.GetComponent<Arrow>().damage = projectileDamage;
             cooldown = 0;
