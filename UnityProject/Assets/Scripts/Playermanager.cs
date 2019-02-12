@@ -70,9 +70,13 @@ public class Playermanager : MonoBehaviour
 
     private void Awake()
     {
-        Playermanager.ins = this;
-        currentHP = maxHP;
-        DontDestroyOnLoad(gameObject);
+        if (Playermanager.ins == null)
+        {
+            Playermanager.ins = this;
+            currentHP = maxHP;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
 
         playerObject = GameObject.FindGameObjectWithTag("Player");
         CalculateStats();
@@ -84,7 +88,10 @@ public class Playermanager : MonoBehaviour
         yAxis = Input.GetAxisRaw("Vertical");
         aimXAxis = Input.GetAxis("XrightCont") + Input.GetAxisRaw("XrightKey");
         aimYAxis = Input.GetAxis("YrightCont") + Input.GetAxisRaw("YrightKey");
-
+        if (playerObject == null)
+        {
+            playerObject = GameObject.FindGameObjectWithTag("Player");
+        }
         if (Input.GetKey(KeyCode.F)) { }
 
     }

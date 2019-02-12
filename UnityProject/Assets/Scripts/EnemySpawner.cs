@@ -42,8 +42,10 @@ public class EnemySpawner : MonoBehaviour
      //   Debug.Log("spawning " + enemiesToSpawn.Count + " enemies");
         for (int i = 0; i < enemiesToSpawn.Count; i++)
         {
+            Debug.Log("Spawning " + enemiesToSpawn[i].name);
             GameObject newEnemy = Instantiate(enemiesToSpawn[i].gameObject);
             newEnemy.transform.position = new Vector3(transform.position.x + Random.Range(-spawnRadius, spawnRadius), transform.position.y, transform.position.z + Random.Range(-spawnRadius, spawnRadius));
+            Debug.Log("Spawned " + enemiesToSpawn[i].name);
         }
     }
 

@@ -35,7 +35,8 @@ public class TurretFollow : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 offseetAdj = Vector3.Scale( offset ,objToFollow.transform.forward); 
-        Gizmos.DrawWireSphere(objToFollow.transform.localPosition + offset, .5f);
+       // Vector3 offseetAdj = offset * transform.forward;
+
+        Gizmos.DrawWireSphere(objToFollow.transform.localPosition +  offset, .5f);
     }
 }

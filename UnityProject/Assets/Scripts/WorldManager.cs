@@ -70,12 +70,15 @@ public class WorldManager : MonoBehaviour
         switch (stateToLoad)
         {
             case Bosses.fire:
+                Debug.Log("Spawning fire enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[0].EnemyGroups);
                 break;
             case Bosses.nature:
+                Debug.Log("Spawning nature enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[1].EnemyGroups);
                 break;
             case Bosses.stone:
+                Debug.Log("Spawning stone enemies");
                 EnemyGenerator.ins.SpawnEnemies(WorldManager.ins.dungeonStates[2].EnemyGroups);
                 break;
             default:
@@ -116,12 +119,16 @@ public class WorldManager : MonoBehaviour
             switch (defeatedBosses[defeatedBosses.Count - 1])
             {
                 case Bosses.fire:
+                    Debug.Log("Spawning fire items");
                     ItemGenerator.ins.SpawnItems(overWorldStates[1].itemDropTable);
+
                     break;
                 case Bosses.nature:
+                    Debug.Log("Spawning nature items");
                     ItemGenerator.ins.SpawnItems(overWorldStates[2].itemDropTable);
                     break;
                 case Bosses.stone:
+                    Debug.Log("Spawning stone items");
                     ItemGenerator.ins.SpawnItems(overWorldStates[3].itemDropTable);
                     break;
 
@@ -143,12 +150,15 @@ public class WorldManager : MonoBehaviour
             switch (defeatedBosses[defeatedBosses.Count - 1])
             {
                 case Bosses.fire:
+                    Debug.Log("Spawning fire enemies");
                     eg.SpawnEnemies(overWorldStates[1].EnemyGroups);
                     break;
                 case Bosses.nature:
+                    Debug.Log("Spawning nature enemies");
                     eg.SpawnEnemies(overWorldStates[2].EnemyGroups);
                     break;
                 case Bosses.stone:
+                    Debug.Log("Spawning stone enemies");
                     eg.SpawnEnemies(overWorldStates[3].EnemyGroups);
                     break;
             }
