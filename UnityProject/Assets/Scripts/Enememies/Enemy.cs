@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField]
     protected float maxHealth;
     [SerializeField]
-    int damage;
+    protected int damage;
     [SerializeField]
     float knockBackForce, stunTime;
 

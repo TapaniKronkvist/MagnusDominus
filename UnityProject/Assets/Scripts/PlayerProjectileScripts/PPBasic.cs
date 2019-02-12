@@ -36,6 +36,7 @@ public class PPBasic : PlayerProjectile
             
         }
 
+
         GameObject newobj = Instantiate(endPrefab);
         newobj.transform.position = transform.position;
         newobj.transform.rotation = transform.rotation;
