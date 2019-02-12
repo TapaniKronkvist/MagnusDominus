@@ -572,75 +572,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927624414}
   m_CullTransparentMesh: 0
---- !u!1001 &1098488964
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4991226806766958938, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_Name
-      value: World Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 130.90909
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 138.16708
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.871075
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8f672592e57684140b175dfa2389278e, type: 3}
 --- !u!1 &1161715754
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +830,7 @@ PrefabInstance:
     - target: {fileID: 8698509201013852113, guid: 507dec24eabd1b745a8b364cff4986cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8698509201013852113, guid: 507dec24eabd1b745a8b364cff4986cf,
         type: 3}
@@ -1080,6 +1011,644 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f5e984fd10015438f309cfd0be93f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2084096031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4991226806766958938, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_Name
+      value: World Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 115.96849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 105.08162
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.005381
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[2].itemDropTable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[0].itemDropTable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.size
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[0].enemyGroups.Array.data[0].name
+      value: Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[2].itemDropTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[0].itemDropTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].name
+      value: Turrets
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].name
+      value: Turrets
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[3]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[3]
+      value: 
+      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
+        type: 3}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[20]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[21]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[22]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[23]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[24]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[25]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[26]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[27]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[28]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[29]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[30]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[31]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[32]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[33]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[34]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[35]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[36]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[37]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[38]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[39]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[40]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[41]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[42]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[43]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[44]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[45]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[46]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[47]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
+        type: 3}
+      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[48]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f672592e57684140b175dfa2389278e, type: 3}
 --- !u!1001 &7320794495630339449
 PrefabInstance:
   m_ObjectHideFlags: 0
