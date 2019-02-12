@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    float currentHealth;
+    protected float currentHealth;
     [SerializeField]
-    float maxHealth;
+    protected float maxHealth;
     [SerializeField]
     int damage;
     [SerializeField]

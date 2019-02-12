@@ -44,6 +44,7 @@ public class Arrow : MonoBehaviour
         {
             Damage();
         }
+        Destroy(gameObject);
     }
     void Damage()
     {

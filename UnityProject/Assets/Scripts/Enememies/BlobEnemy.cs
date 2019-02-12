@@ -9,6 +9,7 @@ public class BlobEnemy : Enemy
     [SerializeField]
     float range;
     Vector3 toPlayer;
+
     private void Update()
     {
 
