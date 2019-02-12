@@ -128,17 +128,7 @@ MonoBehaviour:
     enemyGroups:
     - name: 
       enemies:
-      - {fileID: 1628265529824073664, guid: 090565d69774a384a91f2639332a728a, type: 3}
-      - {fileID: 1628265529824073664, guid: 090565d69774a384a91f2639332a728a, type: 3}
-      - {fileID: 1628265529824073664, guid: 090565d69774a384a91f2639332a728a, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 1628265529824073664, guid: 090565d69774a384a91f2639332a728a, type: 3}
-      - {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f, type: 3}
-      - {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9, type: 3}
+      - {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578, type: 3}
   - name: fire
     itemDropTable:
     - {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6, type: 2}
@@ -157,5 +147,5 @@ MonoBehaviour:
   - name: stone
     itemDropTable: []
     enemyGroups: []
-  overworldSceneNum: 4
-  dungeonSceneNum: 0
+  overworldSceneNum: 2
+  dungeonSceneNum: 3
