@@ -9,7 +9,9 @@ public class VineShot : Arrow
     Playermanager pm;
     Rigidbody rb;
     [SerializeField]
-    float moveSpeed, lifeTime;
+    float moveSpeed, lifeTime, startSpeed;
+
+    bool strtSpd = false;
     // Update is called once per frame
     private void Start()
     {
@@ -19,6 +21,13 @@ public class VineShot : Arrow
 
     public override void Update()
     {
+        if (lookDir != Vector3.zero && !strtSpd)
+        {
+            Debug.Log(";)");
+            strtSpd = true;
+            rb.velocity = startSpeed * lookDir;
+        }
+        else Debug.Log("No ;)");
         if (pm == null) pm = Playermanager.ins;
         if (playerObject == null)
         {
