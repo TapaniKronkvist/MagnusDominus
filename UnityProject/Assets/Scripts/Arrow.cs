@@ -25,7 +25,7 @@ public class Arrow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
        // gameObject.transform.Translate(transform.forward * speed * Time.deltaTime);
         if (lookDir != null)

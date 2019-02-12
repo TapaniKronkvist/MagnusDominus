@@ -22,6 +22,8 @@ public class bossSceneMusic : MonoBehaviour
             Destroy(firstTrack);
             secondTrack = Instantiate(musicTracks[1], transform.position, Quaternion.identity);
         }
+
+        Camera.main.orthographicSize *= 2;
     }
 
 }

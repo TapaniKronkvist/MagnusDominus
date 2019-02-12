@@ -22,16 +22,19 @@ public class TurretFollow : MonoBehaviour
     private void FixedUpdate()
     {
         //Vector3 tarPos = 
-        if (objToFollow == null) Destroy(gameObject);
-        Vector3 offseetAdj = Quaternion.Euler(0, objToFollow.transform.eulerAngles.y, 0) * offset;
-        if (smooth)
-        {
-
-            transform.position =    Vector3.Lerp(transform.position,objToFollow.transform.position + offseetAdj, moveSpeed * Time.deltaTime);
-        }
+        if (objToFollow == null) { Destroy(gameObject); return; }
         else
         {
-            transform.position = objToFollow.transform.position + offseetAdj;
+            Vector3 offseetAdj = Quaternion.Euler(0, objToFollow.transform.eulerAngles.y, 0) * offset;
+            if (smooth)
+            {
+
+                transform.position = Vector3.Lerp(transform.position, objToFollow.transform.position + offseetAdj, moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.position = objToFollow.transform.position + offseetAdj;
+            }
         }
     }
 
