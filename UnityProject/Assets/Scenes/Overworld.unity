@@ -5621,6 +5621,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140332a24e1cfa34cbec08446b448a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &713188713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1469103300}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713188714}
+  m_Layer: 0
+  m_Name: TurretEnemy (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713188714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1469103300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713188713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 160
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &719139681
 PrefabInstance:
   m_ObjectHideFlags: 0

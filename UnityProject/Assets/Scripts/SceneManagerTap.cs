@@ -19,4 +19,12 @@ public class SceneManagerTap : MonoBehaviour
     {
         Application.LoadLevel("MainMenu");
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
+    public void Collection()
+    {
+        Application.LoadLevel("Collection");
+    }
 }
