@@ -586,10 +586,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
 =======
   m_RootOrder: 21
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40399837
 GameObject:
@@ -668,10 +672,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 10
 =======
   m_RootOrder: 25
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 10
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &40399842
 MonoBehaviour:
@@ -2490,6 +2498,7 @@ Transform:
   m_PrefabInstance: {fileID: 222953590}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &241134462
+<<<<<<< HEAD
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2565,6 +2574,8 @@ Transform:
   m_PrefabInstance: {fileID: 241134462}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &243228685
+=======
+>>>>>>> parent of b85c0a5... Nature boss done ish
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5848,6 +5859,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 586598312}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &590249404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6047,6 +6059,9 @@ Transform:
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &603817004
+=======
+--- !u!1001 &643530042
+>>>>>>> parent of b85c0a5... Nature boss done ish
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12127,10 +12142,14 @@ Transform:
   - {fileID: 1095587743}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 13
 =======
   m_RootOrder: 28
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 13
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &796411503
 PrefabInstance:
@@ -14173,10 +14192,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 4
 =======
       value: 6
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+      value: 5
+>>>>>>> parent of b85c0a5... Nature boss done ish
       objectReference: {fileID: 0}
     - target: {fileID: 5688550571473652974, guid: 8f4bca37be807144f9539554e837f77a,
         type: 3}
@@ -14193,6 +14216,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 5688550571473652973, guid: 8f4bca37be807144f9539554e837f77a,
+        type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 536611813}
+>>>>>>> parent of b85c0a5... Nature boss done ish
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4bca37be807144f9539554e837f77a, type: 3}
 --- !u!1001 &1023008797
@@ -15211,10 +15242,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 8
 =======
   m_RootOrder: 23
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 8
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1112411462 stripped
 Transform:
@@ -15370,10 +15405,14 @@ Transform:
   - {fileID: 1058225879}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 12
 =======
   m_RootOrder: 27
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 12
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126754378
 PrefabInstance:
@@ -20854,10 +20893,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 9
 =======
   m_RootOrder: 24
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 9
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 31.760002, y: -256.512, z: -76.788}
 --- !u!1 &1192416466
 GameObject:
@@ -22070,10 +22113,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2
 =======
       value: 4
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+      value: 3
+>>>>>>> parent of b85c0a5... Nature boss done ish
       objectReference: {fileID: 0}
     - target: {fileID: 3342983356250293206, guid: 3f60445dc88bdfa48af4b034d54377a4,
         type: 3}
@@ -23535,10 +23582,14 @@ Transform:
   - {fileID: 1440962589}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 14
 =======
   m_RootOrder: 29
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 14
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1420729946
 PrefabInstance:
@@ -24036,6 +24087,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1143073288}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &1506143891
 GameObject:
   m_ObjectHideFlags: 0
@@ -24072,6 +24124,83 @@ Transform:
   m_Father: {fileID: 687606059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+--- !u!1001 &1512172193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2132830751782522537, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_Name
+      value: Midboss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.748413
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -40.715496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 1799569945992340469, guid: 8d1dfadaee2d9a340a772cffadfa24ea,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a88f8124547a8c419c94e6bfc81bc12, type: 3}
+>>>>>>> parent of b85c0a5... Nature boss done ish
 --- !u!4 &1516465217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6941559781515047833, guid: bc9869eebc1c3904b97e787cf68b16d6,
@@ -27358,10 +27487,14 @@ Transform:
   - {fileID: 2019139541}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 16
 =======
   m_RootOrder: 31
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 16
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: -89.999, z: 0}
 --- !u!1001 &1851314728
 PrefabInstance:
@@ -27810,7 +27943,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 26
+=======
+  m_RootOrder: 11
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
 --- !u!1001 &1886613076
@@ -27917,10 +28054,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 15
 =======
   m_RootOrder: 30
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 15
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &1899797875
 PrefabInstance:
@@ -28954,10 +29095,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 3
 =======
       value: 5
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+      value: 4
+>>>>>>> parent of b85c0a5... Nature boss done ish
       objectReference: {fileID: 0}
     - target: {fileID: 3929111787673437156, guid: d42780f9cf2d01948bbd0e91a127a8a5,
         type: 3}
@@ -34269,7 +34414,11 @@ PrefabInstance:
     - target: {fileID: 6714678422798993948, guid: e39f3dcd0744048458050660c11f1077,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 7
+=======
+      value: 2
+>>>>>>> parent of b85c0a5... Nature boss done ish
       objectReference: {fileID: 0}
     - target: {fileID: 6714678422798993948, guid: e39f3dcd0744048458050660c11f1077,
         type: 3}
@@ -34683,6 +34832,7 @@ Transform:
   - {fileID: 273043615}
   - {fileID: 2022881703}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 7
 =======
@@ -39604,6 +39754,9 @@ Transform:
   m_Father: {fileID: 1506143892}
   m_RootOrder: 1
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+  m_RootOrder: 7
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2142891285 stripped
 Transform:
@@ -39611,6 +39764,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1410340279}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1001 &1955477859858417287
@@ -39781,3 +39935,5 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
 >>>>>>> c63c14f50dbbee1deedb95490675c3779f721cc5
+=======
+>>>>>>> parent of b85c0a5... Nature boss done ish

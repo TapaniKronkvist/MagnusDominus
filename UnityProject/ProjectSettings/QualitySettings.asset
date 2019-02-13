@@ -4,7 +4,11 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
+<<<<<<< HEAD
   m_CurrentQuality: 4
+=======
+  m_CurrentQuality: 5
+>>>>>>> parent of b85c0a5... Nature boss done ish
   m_QualitySettings:
   - serializedVersion: 2
     name: Very Low
@@ -33,7 +37,8 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 16
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
   - serializedVersion: 2
     name: Low
     pixelLightCount: 0
