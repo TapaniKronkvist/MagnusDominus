@@ -44,6 +44,7 @@ public class ChargingTurret : TurretEnemy
     public override void Shoot()
     {
         Debug.Log("Shoot");
+        beam.SetPosition(0, bulletExitPoint.transform.position);
         //  base.Shoot();
         if (!charged && !charging && waitTimeLeft <= 0 && hasTarget)
         {
@@ -80,6 +81,12 @@ public class ChargingTurret : TurretEnemy
                     hit.collider.GetComponent<IDamageable>().Damage(damage, gameObject);
                 }
 
+            } else
+            {
+                beam.gameObject.SetActive(false);
+                hitEffect.Stop();
+                startLight.enabled = false;
+                endLight.enabled = false;
             }
 
 

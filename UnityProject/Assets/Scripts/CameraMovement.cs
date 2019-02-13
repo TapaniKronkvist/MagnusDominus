@@ -50,7 +50,7 @@ public class CameraMovement : MonoBehaviour
 
         if (playerObject != null)
         {
-            transform.position = playerObject.transform.position + Quaternion.Euler(0, -45, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset);
+            transform.position = playerObject.transform.position + Quaternion.Euler(0, cameraRotation, 0) * new Vector3(playerFollowXOffset, playerFollowYOffset, playerFollowZOffset);
         }
         else Debug.Log("PlayerObject not set");
     }

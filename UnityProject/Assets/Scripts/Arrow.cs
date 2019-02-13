@@ -13,6 +13,8 @@ public class Arrow : MonoBehaviour
     public int damage = 1;
     [SerializeField]
     float knockback;
+    [SerializeField]
+    float stunTime;
     public Vector3 lookDir;
     public Transform shooter { set { lookDir = value.forward; } }
 
@@ -23,7 +25,7 @@ public class Arrow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
        // gameObject.transform.Translate(transform.forward * speed * Time.deltaTime);
         if (lookDir != null)
@@ -50,7 +52,12 @@ public class Arrow : MonoBehaviour
     void Damage()
     {
         Playermanager.ins.DamagePlayer(damage);
+
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(knockback, transform.position);
+        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(stunTime);
+
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(15, transform.position);
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(.4f);
+
     }
 }

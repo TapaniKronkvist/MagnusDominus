@@ -22,7 +22,7 @@ public class MeleeGoblin : Goblin
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
                 toPlayer = Playermanager.ins.playerObject.transform.position - transform.position;
-                transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+              /*  movement.*/transform.Translate(toPlayer.normalized * moveSpeed * Time.deltaTime);
                     if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < meleeRange)
                     {
                         Attack();
@@ -41,5 +41,10 @@ public class MeleeGoblin : Goblin
         DamagePlayer();
         KnockBackPlayer();
 
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, meleeRange);
     }
 }

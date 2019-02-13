@@ -24,7 +24,8 @@ public class Playermanager : MonoBehaviour
     public enum Element { fire, stone, nature, neutral }
     public Element selectedElemen = Element.neutral;
     List<Element> unlockedElements = new List<Element>();
-
+    [SerializeField]
+    int gameOverSceneNumber = 5;
     [SerializeField]
      int maxHP = 1;
     [SerializeField]
@@ -161,8 +162,14 @@ public class Playermanager : MonoBehaviour
 
     public void Death()
     {
+        StartCoroutine(Dying(3));
         Destroy(playerObject);
-        Debug.Log("You Died");
+    }
+
+    IEnumerator Dying(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(gameOverSceneNumber);
     }
 
     public void Heal(int healAmount)
