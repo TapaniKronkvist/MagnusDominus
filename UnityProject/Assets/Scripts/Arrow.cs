@@ -52,12 +52,7 @@ public class Arrow : MonoBehaviour
     void Damage()
     {
         Playermanager.ins.DamagePlayer(damage);
-<<<<<<< HEAD
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(knockback, transform.position);
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(stunTime);
-=======
-        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(15, transform.position);
-        Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(.4f);
->>>>>>> 955a4151e6bd133be74141126c0d827f025bb498
     }
 }
